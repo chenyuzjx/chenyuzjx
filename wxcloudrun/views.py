@@ -8,8 +8,7 @@ from wxcloudrun.models import Counters
 
 logger = logging.getLogger('log')
 def hello_world(request):
-    if request.body=='holle':
-        return '周军兴的第一个部署!\n'
+    return '周军兴的第一个部署!\n'
 '''
 def index(request, _):
     """
