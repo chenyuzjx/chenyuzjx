@@ -7,7 +7,7 @@ from wxcloudrun.models import Counters
 
 
 logger = logging.getLogger('log')
-def hello_world(request):
+def hello_world(request, _):
     return '周军兴的第一个部署!\n'
 '''
 def index(request, _):
