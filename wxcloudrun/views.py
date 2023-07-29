@@ -17,7 +17,8 @@ def index(request, _):
     """
 
     return render(request, 'index.html')
-
+def holle():
+    return "周军兴"
 
 def counter(request, _):
     """
@@ -28,7 +29,7 @@ def counter(request, _):
 
     rsp = JsonResponse({'code': 0, 'errorMsg': ''}, json_dumps_params={'ensure_ascii': False})
     if request.method == 'GET' or request.method == 'get':
-        rsp = get_count()
+        rsp = holle()
     elif request.method == 'POST' or request.method == 'post':
         rsp = update_count(request)
     else:
