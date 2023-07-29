@@ -7,9 +7,10 @@ from wxcloudrun.models import Counters
 
 
 logger = logging.getLogger('log')
-def hello_world():
-    return '周军兴的第一个部署!\n'
-
+def hello_world(request):
+    if request.body=='holle':
+        return '周军兴的第一个部署!\n'
+'''
 def index(request, _):
     """
     获取主页
@@ -75,3 +76,4 @@ def update_count(request):
     else:
         return JsonResponse({'code': -1, 'errorMsg': 'action参数错误'},
                     json_dumps_params={'ensure_ascii': False})
+'''
